@@ -57,11 +57,19 @@ for(let i = 0; i < themeBtn.length; i++) {
 // =======================================================
 
 const loadMoreBtn = document.querySelector(".load-btn");
+const seeLessBtn = document.querySelector(".less-btn");
 const loadBlogs = document.querySelector(".load-blogs");
 const newsletterDiv = document.querySelector(".newsletter");
 
 loadMoreBtn.addEventListener('click', (e) => {
   e.target.style.display = "none"
   loadBlogs.style.display = "block"
-  newsletterDiv.style.marginBottom = "48px"
+  seeLessBtn.style.display = "block"
+  // newsletterDiv.style.marginBottom = "48px"
+})
+
+seeLessBtn.addEventListener('click', (e) => {
+  e.target.style.display = "none"
+  loadBlogs.style.display = "none"
+  loadMoreBtn.style.display = "block"
 })

@@ -601,6 +601,10 @@ section.contents-section .container {
     display: none;
 }
 
+.blogs button.less-btn {
+    display: none;
+}
+
 
 
 
