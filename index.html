@@ -20,9 +20,26 @@
     <!--
         - CSS Source
     -->
+    <link rel="stylesheet" href="./css/preloader.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body class="light-theme">
+
+    <!--====================================================
+    ---- Preloader
+    =====================================================-->
+
+    <div class="preloader" id="preloader">
+        <div>
+            <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+                <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+            </svg>
+        </div>
+    </div>
+
 
     <!--================================================
     --  Navbar Section
@@ -960,8 +977,14 @@
 
     <!--=====================================| JS Source |===========================================-->
 
+    <!-- IonIcons CDN -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- JS Source -->
     <script src="./js/script.js"></script>
 </body>
 </html>
