@@ -49,7 +49,9 @@ var typed = new Typed(".typing", {
   strings: [`Web Expert${pauseTyping}`, `Coder${pauseTyping}`, `Programmer${pauseTyping}`],
   typeSpeed: 100,
   backSpeed: 60,
-  loop: true
+  loop: true,
+  showCursor: false,
+  fadeOut: true,
 });
 
 
