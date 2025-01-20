@@ -40,6 +40,20 @@ const navToggleFunc = () => {
 
 
 // =======================================================
+// -- Hero Section Typing Functionality
+// =======================================================
+
+var pauseTyping = "^3000";
+
+var typed = new Typed(".typing", {
+  strings: [`Web Expert${pauseTyping}`, `Coder${pauseTyping}`, `Programmer${pauseTyping}`],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+
+
+// =======================================================
 // -- Theme Button Functionality
 // =======================================================
 
@@ -85,3 +99,14 @@ seeLessBtn.addEventListener('click', (e) => {
   loadBlogs.style.display = "none"
   loadMoreBtn.style.display = "block"
 })
+
+
+// ==========================================================
+// -- Get Year
+// ==========================================================
+
+const date = new Date();
+const yearText = document.getElementById("year");
+
+let year = date.getFullYear();
+yearText.innerHTML = year;
